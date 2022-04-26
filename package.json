@@ -1,0 +1,22 @@
+{
+    "name": "it-management-and-devop---i",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yilwang/IT-Management-and-DevOp---I.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yilwang/IT-Management-and-DevOp---I/issues"
+    },
+    "homepage": "https://github.com/yilwang/IT-Management-and-DevOp---I#readme",
+    "dependencies": {
+        "mocha": "^9.2.2"
+    }
+}
