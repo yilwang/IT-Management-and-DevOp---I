@@ -1,3 +1,4 @@
+#This file is for kubenete # Using Pipeline taking more time so we are using Kubenete
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
@@ -19,10 +20,10 @@ spec:
             - containerPort: 3000
           resources:
             limits:
-              cpu: ".5"
+              cpu: ".125"
               memory: "500Mi"
             requests:
-              cpu: ".25"
+              cpu: ".1"
               memory: "250Mi"
           livenessProbe:
             httpGet:
