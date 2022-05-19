@@ -17,7 +17,7 @@ spec:
         - name: sean-stedi
           image: gcr.io/power-glove/stedi-liya:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 4567
           resources:
             limits:
               cpu: ".125"
