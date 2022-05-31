@@ -22,8 +22,8 @@ steps:
       - "gcr.io/$PROJECT_ID/stedi-liya:latest"
 #This step deploys the dev application in Kubenetes      
   - name: gcr.io/cloud-builders/gke-deploy
-      id: Deploy
-      args:
+    id: Deploy
+    args:
       - run
       - --filename=manifest.yaml
       - --image=gcr.io/$PROJECT_ID/stedi-liya:latest
