@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 const application = express();
 
 //end point is an URL.
-application.use(bodyParser.json);
+application.use(bodyParser.json());
 application.get('/',(req, res)=>{res.send("Hello")});
 
 application.post('/login',(loginRequest,loginResponse)=>{
