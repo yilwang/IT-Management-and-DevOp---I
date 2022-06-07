@@ -19,7 +19,7 @@ steps:
   - name: gcr.io/cloud-builders/gke-deploy
     id: Deploy
     args:
-      - run
+      - "run"
       - --filename=manifest.yaml
       - --image=gcr.io/$PROJECT_ID/stedi-liya:latest
       - --location=us-west1-b
