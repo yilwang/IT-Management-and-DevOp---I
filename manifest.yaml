@@ -32,7 +32,7 @@ spec:
             initialDelaySeconds: 3
             periodSeconds: 3
           command: ["npm"]
-          args: ["run","start"]
+          args: ["npm","run","start"]
 
 --- # This three - seperates two documents in a yaml file.
 # Adding load balancers handles the web or user traffic to the Kubenete deployment.
