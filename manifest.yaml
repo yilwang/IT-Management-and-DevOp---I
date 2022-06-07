@@ -16,6 +16,8 @@ spec:
       containers:
         - name: liya-stedi
           image: gcr.io/power-glove/stedi-liya:latest
+          command: ["npm"]
+          args: ["run","start"]
           ports:
             - containerPort: 3000
           resources:
@@ -31,9 +33,6 @@ spec:
               port: 3000
             initialDelaySeconds: 3
             periodSeconds: 3
-          command: ["npm"]
-          args: ["run","start"]
-
 --- # This three - seperates two documents in a yaml file.
 # Adding load balancers handles the web or user traffic to the Kubenete deployment.
 apiVersion: v1

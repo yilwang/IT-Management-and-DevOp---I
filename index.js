@@ -19,11 +19,7 @@ application.post('/login',(loginRequest,loginResponse)=>{
         loginResponse.status(403);
         loginResponse.send({Status: "Failed Logging In"});
     }
-
-
 });
-
-
 
 
 application.listen(3000,()=>{console.log("Listening...")});

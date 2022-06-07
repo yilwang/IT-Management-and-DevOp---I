@@ -19,7 +19,7 @@ const login = async({ userName, password }) => {
 
     console.log(options.method);
 
-    const tokenResponse = await fetch('https://dev.stedi.me/login', options);
+    const tokenResponse = await fetch('http://35.233.139.110/login', options);
     //const tokenResponse = await fetch('https://dev.stedi.me/login'); <-- This is a GET request
     const token = await tokenResponse.text();
 

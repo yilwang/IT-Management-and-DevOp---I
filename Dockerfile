@@ -1,7 +1,7 @@
 FROM node:14-alpine 
 #I can run two to three container for price(computing)
 
-COPY . /
+COPY . .
 
 RUN npm install
 
