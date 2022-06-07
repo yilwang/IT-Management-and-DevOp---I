@@ -15,11 +15,6 @@ steps:
     args: 
       - "push"
       - "gcr.io/$PROJECT_ID/stedi-liya:latest"
-  - name: "gcr.io/cloud-builders/docker"
-    id: Run
-    args: 
-      - "run"
-      - "gcr.io/$PROJECT_ID/stedi-liya:latest"
 #This step deploys the dev application in Kubenetes      
   - name: gcr.io/cloud-builders/gke-deploy
     id: Deploy
@@ -30,4 +25,9 @@ steps:
       - --location=us-west1-b
       - --output=/tmp/outputdev
       - --cluster=cluster-2
-      
+
+  - name: "gcr.io/cloud-builders/docker"
+    id: Test
+    args: 
+      - "run"
+      - "gcr.io/$PROJECT_ID/stedi-liya:latest"
