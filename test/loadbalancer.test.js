@@ -6,4 +6,5 @@ it('Should get login token', async() => {
     const text= await reponse.text();
     console.log("Token: " + text);
     assert.equal(text,"Hello");
+    this.timeout(500);
 })
