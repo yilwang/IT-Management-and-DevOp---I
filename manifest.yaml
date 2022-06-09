@@ -33,6 +33,12 @@ spec:
               port: 3000
             initialDelaySeconds: 3
             periodSeconds: 3
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 3
+            periodSeconds: 3
 --- # This three - seperates two documents in a yaml file.
 # Adding load balancers handles the web or user traffic to the Kubenete deployment.
 apiVersion: v1
